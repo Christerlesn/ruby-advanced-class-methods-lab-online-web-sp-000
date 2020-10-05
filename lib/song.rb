@@ -45,9 +45,7 @@ def self.find_or_create_by_name(name)
 end
 
 def self.alphabetical()
-  @@all.sort_by do |x|
-    x.name
-  end
+  @@all.sort_by{|x| x.name}
 end
 
 end
