@@ -10,6 +10,7 @@ def self.create(name)
   song = self.new
   song.name = name
   @@all << song
+  song
 end
 
 
