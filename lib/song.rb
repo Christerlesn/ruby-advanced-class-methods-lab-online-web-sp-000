@@ -7,6 +7,7 @@ class Song
     @@all
   end
 
+binding.pry
 def self.create(name)
   song = self.new
   song.name = name
@@ -19,4 +20,3 @@ def save
   end
 
 end
-binding.pry
