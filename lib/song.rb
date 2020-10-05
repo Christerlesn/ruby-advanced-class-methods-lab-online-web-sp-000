@@ -7,11 +7,8 @@ class Song
     @@all
   end
 
-binding.pry
 def self.create(name)
   song = self.new
-  song.name = name
-  self.class.all << song
   song
 end
 
