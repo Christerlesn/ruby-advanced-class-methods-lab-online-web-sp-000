@@ -36,6 +36,12 @@ def self.find_by_name(name)
   end
 end
 
-
+def self.find_or_create_by_name(name)
+  if name == nil 
+    self.class.create_by_name
+  else
+    self.class.find_by_name
+  end
+end
 
 end
