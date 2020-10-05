@@ -42,6 +42,7 @@ def self.find_or_create_by_name(name)
   else
     self.find_by_name
   end
+  song
 end
 
 end
