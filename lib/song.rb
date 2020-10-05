@@ -31,11 +31,9 @@ def self.create_by_name(name)
 end
 
 def self.find_by_name(name)
-  songs = self.class.all
-  songs.find do |song|
+  @@all.find do |song|
     song.name == name
   end
-  songs
 end
 
 
